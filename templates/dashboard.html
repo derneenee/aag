@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% load humanize %}
+{% load static %}
+
+{% block dashboard %}
+
+<main class="col-sm-9 col-md-10 bg-overzicht ml-auto">
+  <h2 class="mt-2">Overzicht</h2>
+    <section class="row text-center placeholders">
+      <div class="card">
+        <div class="row">
+          <div class="col-3 placeholder">
+            <div class="card-body">
+              <h4>Completed serveys: 2</h4>
+              <h4>Total votes: 249</h4>
+            </div>
+          </div>
+          <div class="col-3 placeholder">
+            <div class="card-body">
+              <img class="img-fluid padding-nps" src="{% static 'img/tabel5.png' %}" alt="">
+            </div>
+          </div>
+          <div class="col-3 placeholder">
+            <div class="card-body">
+              <img class="img-fluid" src="{% static 'img/nps_explainer.png' %}" alt="">
+            </div>
+          </div>
+          <div class="col-3 placeholder">
+            <div class="card-body">
+              <img class="img-fluid padding-nps" src="{% static 'img/nps.png' %}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="row text-center placeholders">
+    <div class="col-6 placeholder">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Votes C-fest</h4>
+          <img class="img-fluid padding-tabels" src="{% static 'img/tabel1.png' %}" alt="">
+          <a href="#" class="btn btn-primary mt-3">View more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 placeholder">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Votes % C-fest</h4>
+          <img class="img-fluid padding-tabels" src="{% static 'img/tabel2.png' %}" alt="">
+          <a href="#" class="btn btn-primary mt-3">View more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 placeholder">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Votes C-fest</h4>
+          <img class="img-fluid padding-tabels" src="{% static 'img/tabel3.png' %}"  alt="">
+          <a href="#" class="btn btn-primary mt-3">View more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 placeholder">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Total score</h4>
+          <img class="img-fluid" src="{% static 'img/tabel4.png' %}"  alt="">
+          <a href="#" class="btn btn-primary mt-3">View more</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+{% endblock %}
